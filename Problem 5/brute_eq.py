@@ -20,14 +20,19 @@ def brute_eq():
 
     # YOUR CODE HERE
 
+    combined_x_value = a + d   # 5 + 4 = 9
+    combined_y_value = b + e   # 2+2 = 4
+    total_sum = c + f          #3 + 9 = 12 
+    t=0
     for x in range(-10, 10):
         for y in range (-10, 10):
-            if a*x + b*y == c:
-                if d*x + e*y == f:
-                    print("x = " + str(x) ", y = " + str(y))
-
-
-
+            if combined_x_value*x + combined_y_value*y == total_sum:
+                print(f"x = {x} , y = {y}")
+                t =1
+        if t ==1:
+            break
+    if t==0:
+        print("There is no solution")
     
 if __name__ == "__main__":
     brute_eq()

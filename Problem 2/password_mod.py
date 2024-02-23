@@ -22,8 +22,8 @@ def password_mod():
         else:
             password += i
         
-    
-    print(str(password) + "!")
+    new_password = password
+    print(str(new_password) + "!")
 
 if __name__ == "__main__":
     password_mod()

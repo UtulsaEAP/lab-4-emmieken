@@ -12,6 +12,8 @@ def reverse_string():
     for i in range(len(phrase1) -1, 0-1, -1):
         print(phrase1[i], end = "")
     
+    print (" ")
+
     for i in range(len(phrase2) -1, 0-1, -1):
         print(phrase2[i], end = "")
 
