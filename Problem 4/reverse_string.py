@@ -9,6 +9,7 @@ def reverse_string():
     phrase1 = str(input())
     phrase2 = str(input())
 
+    
     for i in range(len(phrase1) -1, 0-1, -1):
         print(phrase1[i], end = "")
     
@@ -17,7 +18,9 @@ def reverse_string():
     for i in range(len(phrase2) -1, 0-1, -1):
         print(phrase2[i], end = "")
 
+    
 
+    
 
 if __name__ == "__main__":
         reverse_string()        
