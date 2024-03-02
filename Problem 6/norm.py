@@ -7,17 +7,19 @@ Lab Time: 2/23/24
 
 def norm():
     # Write your code here
-    num1 = float(input())
-    num2 = float(input())
-    num3 = float(input())
-    num4 = float(input())
-    num5 = float(input())
-
-    num_list = [num1, num2, num3, num4, num5]
+    num = int(input())
+    num_list = []
     
+    for i in range(num):
+        amount = (input())
+        num_list.append(float(amount))
+    largest = max(num_list)
+
     for i in num_list:
-        if i > num1:
-            print(f'{num1:.2f}')
+        new_num = i/largest
+        print(f'{new_num:.2f}')
+
+        
     
     
 

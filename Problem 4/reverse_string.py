@@ -6,17 +6,12 @@ Lab Time: 2/22/24
 """
 
 def reverse_string():
-    phrase1 = str(input())
-    phrase2 = str(input())
+    phrase = str(input())
 
-    
-    for i in range(len(phrase1) -1, 0-1, -1):
-        print(phrase1[i], end = "")
-    
-    print (" ")
-
-    for i in range(len(phrase2) -1, 0-1, -1):
-        print(phrase2[i], end = "")
+    while len(phrase) >=1 and phrase != "Done" and phrase != "done" and phrase != "d":
+        print(phrase[::-1])
+        phrase = str(input())
+    pass
 
     
 
